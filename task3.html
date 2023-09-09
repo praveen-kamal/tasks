@@ -1,11 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Task 3</h1>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			h3 {
+				text-align: center;
+			}
+
+			div {
+				width: auto;
+				margin: auto;
+				background-color: lightgray;
+				border: 1px solid black;
+				padding: 10px;
+			}
+
+			p {
+				margin: 10px;
+			}
+
+			a {
+				margin: 10px;
+			}
+
+			#email {
+				background-color: white;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<h3>Task 3</h3>
+		<div id="parent">
+			<p>Click any of the following links</p>
+
+			<a href="#" target="_blank">Opens in New</a>
+			<span>|</span>
+			<a id="self" href="#self">Opens in Self</a>
+			<span>|</span>
+			<a href="#parent">Opens in Parent</a>
+			<span>|</span>
+			<a href="#body">Opens in Body</a>
+			<span>|</span>
+			<a id="email" href="#">Send email</a>
+		</div>
+	</body>
 </html>
