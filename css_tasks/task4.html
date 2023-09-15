@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 4</title>
+		<style>
+			h1,
+			h2,
+			p {
+				text-align: center;
+			}
+
+			body {
+				margin: 0px;
+			}
+
+			.container {
+				margin: 0px;
+			}
+
+			.button {
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				height: 60px;
+				width: 60px;
+				margin-left: 0px;
+				margin-bottom: 10px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				transition: width 0.3s ease;
+			}
+
+			.button a {
+				text-decoration: none;
+				color: white;
+				transform: scaleX(0);
+				transition: transform 0.3s ease;
+			}
+
+			#b1 {
+				top: 70px;
+				background-color: green;
+			}
+
+			#b2 {
+				top: 150px;
+				background-color: lightblue;
+			}
+
+			#b3 {
+				top: 230px;
+				background-color: red;
+			}
+
+			#b4 {
+				top: 310px;
+				background-color: grey;
+			}
+
+			.button:hover {
+				width: 100px;
+				cursor: pointer;
+			}
+
+			.button:hover a {
+				transform: scaleX(1);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS Task 4</h1>
+
+		<div class="container">
+			<h2>Hoverable Sidenav Buttons</h2>
+
+			<p>
+				Hover over the buttons in the left side navigation to open them
+			</p>
+			<div class="button" id="b1">
+				<a href="">Home</a>
+			</div>
+			<div class="button" id="b2">
+				<a href="">HTML</a>
+			</div>
+			<div class="button" id="b3">
+				<a href="">CSS</a>
+			</div>
+			<div class="button" id="b4">
+				<a href="">JS</a>
+			</div>
+		</div>
+	</body>
+</html>
