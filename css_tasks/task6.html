@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 6</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 6</title>
+		<style>
+			h1 {
+				text-align: center;
+			}
+
+			.container {
+				text-align: justify;
+				width: 500px;
+				margin: auto;
+			}
+
+
+            .profile {
+                text-align: center;
+            }
+
+			#profile-pic {
+				height: 200px;
+				width: 220px;
+			}
+
+			#login {
+				padding: 10px;
+				margin: 20px 0 20px 0;
+				border: none;
+				border-radius: 5px;
+				width: 510px;
+				background-color: limegreen;
+				color: white;
+			}
+
+			#username,
+			#password {
+				width: 500px;
+				padding: 5px;
+			}
+
+			.container label {
+				font-weight: 700;
+				display: block;
+				margin: 20px 0 5px 0;
+			}
+
+			.container label[for="remember-me"] {
+				font-weight: 500;
+				display: inline;
+				justify-content: left;
+			}
+
+
+			.container-bottom {
+                margin-top: 10px;
+                display: flex;
+				background-color: lightgrey;
+                width: 510px;
+                height: 50px;
+                justify-content: space-between;
+                align-items: center;
+			}
+
+
+			.container-bottom button {
+				background-color: red;
+				color: white;
+                border: 0px;
+                border-radius: 5px;
+                padding: 8px;
+                margin: 5px;
+			}
+
+			.container-bottom a {
+				color: black;
+			}
+
+            .container-bottom p {
+                margin: 5px;
+            }
+		</style>
+	</head>
+	<body>
+		<h1>CSS Task 6</h1>
+
+		<div class="container">
+            <div class="profile">
+			    <img src="./profile.png" alt="" id="profile-pic" />
+            </div>
+
+			<form action="">
+				<label for="username">Username</label>
+				<input type="text" id="username" placeholder="Enter Username" />
+				<br />
+
+				<label for="password">Password</label>
+				<input
+					type="password"
+					id="password"
+					placeholder="Enter Password"
+				/>
+				<br />
+
+				<input type="submit" id="login" value="Login" />
+				<br />
+
+				<input type="checkbox" id="remember-me" />
+				<label for="remember-me">Remember me</label>
+			</form>
+
+			<div class="container-bottom">
+				<button id="cancel">Cancel</button>
+
+				<p>Forgot <a href="">password?</a></p>
+			</div>
+		</div>
+	</body>
 </html>
